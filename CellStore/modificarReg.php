@@ -10,6 +10,8 @@
   <li><a class="active" href="listadoStock.php">Stock</a></li>
   <li><a href="agregarReg.php">Agregar Articulo</a></li>
   <li><a href="modificarReg.php">Modificar Articulo</a></li>
+  <li><a href="borrarRegistro.php">Eliminar Articulo</a></li>
+  <li><a href="Reportes.php">Reporte</a></li>
 </ul>
 
 
