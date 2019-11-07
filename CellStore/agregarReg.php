@@ -69,7 +69,7 @@
 
 
   <div class="row">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Agregar Articulo">
   </div>
   </form>
 </div>

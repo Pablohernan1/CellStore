@@ -13,11 +13,6 @@
   <li><a href="borrarRegistro.php">Eliminar Articulo</a></li>
   <li><a href="Reportes.php">Reporte</a></li>
 </ul>
-Bienvenidos a CellStore
-
-
-
-
-
+<b>Bienvenidos a CellStore</b>
 </body>
 </html>

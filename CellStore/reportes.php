@@ -15,21 +15,15 @@
 </ul>
      <div class="col-75">
 
-
-
   <form action="#" method="post">
-
 <select name="operacion" >
   <option value="marca">Marca</option>
   <option value="modelo">Modelo</option>
   <option value="color">color</option>
-
 </select><br><br>
   <input type="text" name="num1"><br><br>
-
 <input type="submit" value="Filtrar">  <br>
 <br>
-
 </form>
 </div>
 </form>
@@ -44,7 +38,6 @@
     <th>Stock</th>
   </tr>
   <tr>
-
 
 <?php
 error_reporting(0);

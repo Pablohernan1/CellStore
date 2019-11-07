@@ -75,7 +75,7 @@ label {
 }
 
 input[type=text] {
-  background-color: #4CAF50;
+  background-color: #c4c8cc;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -84,7 +84,7 @@ input[type=text] {
   float: left;
 }
 input[type=number] {
-  background-color: #4CAF50;
+  background-color: #c4c8cc;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -93,13 +93,9 @@ input[type=number] {
   float: left;
 }
 
-input[type=text]:hover {
-  background-color: #45a049;
-}
 
-input[type=number]:hover {
-  background-color: #45a049;
-}
+
+
 
 .container {
   border-radius: 5px;
