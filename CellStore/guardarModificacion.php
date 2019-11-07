@@ -20,11 +20,8 @@
 
 
 <?php
-//error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "miBase";
+error_reporting(0);
+include("conexion.php");
 $flag = false;
 
 //No se utiliza isset, dado a que se utilizo la funcion de "Required" para cada campo
@@ -35,14 +32,6 @@ $color = $_POST['color'];
 $precio = $_POST['precio'];
 $stock = $_POST['stock'];
 
-
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 $sql =  'UPDATE articulos SET'.' marca = "'.$marca.'", modelo = "'.$modelo.'", color = "'.$color.'", precio = '. $precio.', stock = '. $stock.'
 where id ='. $id;

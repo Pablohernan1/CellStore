@@ -13,17 +13,14 @@
   <li><a href="borrarRegistro.php">Eliminar Articulo</a></li>
   <li><a href="Reportes.php">Reporte</a></li>
 </ul>
-Bienvenidos a CellStore
+
 
 
 
 
 <?php
 error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "miBase";
+include("conexion.php");
 $flag = true;
 //No se utiliza isset, dado a que se utilizo la funcion de "Required" para cada campo
 $marca = $_POST['marca'];
@@ -32,14 +29,6 @@ $color = $_POST['color'];
 $precio = $_POST['precio'];
 $stock = $_POST['stock'];
 
-
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 $sql = "insert into articulos (marca, modelo, color, precio, stock)
 VALUES ('".$marca."', '".$modelo."', '".$color."'," .$precio.", ".$stock.")";

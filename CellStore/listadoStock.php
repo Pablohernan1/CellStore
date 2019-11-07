@@ -27,17 +27,7 @@
 
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "miBase";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include("conexion.php");
 
 $sql = "SELECT * FROM articulos";
 $result = $conn->query($sql);

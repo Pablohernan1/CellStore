@@ -41,19 +41,11 @@
 
 <?php
 error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "miBase";
+include("conexion.php");
 $marcaSearch = $_POST['operacion'];
 $dato = $_POST['num1'];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+
 
 $sql = "SELECT * FROM articulos where ".$marcaSearch. " = '". $dato."'";
 

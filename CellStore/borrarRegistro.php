@@ -13,7 +13,7 @@
     <li><a href="borrarRegistro.php">Eliminar Articulo</a></li>
     <li><a href="Reportes.php">Reporte</a></li>
 </ul>
-  <h1>Eliminar un registro</h1>
+  <h2><b>Eliminar un registro</b></h2>
      <div class="col-75">
   <form action="#" method="post">
   Ingrese el ID del articulo a eliminar:
@@ -27,18 +27,10 @@
 
 <?php
 error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "miBase";
+include("conexion.php");
 $id = $_POST['num1'];
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+
 
 //$sql = "delete FROM articulos where id = ".$id;
 //$result = $conn->query($sql); if ($id > 0) {

@@ -13,6 +13,7 @@
   <li><a href="borrarRegistro.php">Eliminar Articulo</a></li>
   <li><a href="Reportes.php">Reporte</a></li>
 </ul>
+<b><h2>Modificar un Registro</h2></b>
 
 
 <form action="hacerModificacion.php" method="post">
